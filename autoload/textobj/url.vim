@@ -1,5 +1,5 @@
 function! s:extract_url(line)
-  let l:mx = '\(http\|https\|ftp\)://'
+  let l:mx = '[a-z0-9]\+://'
   \ .. '[a-zA-Z0-9][a-zA-Z0-9_-]*'
   \ .. '\(\.[a-zA-Z0-9][a-zA-Z0-9_-]*\)*'
   \ .. '\(:\d\+\)\?'
